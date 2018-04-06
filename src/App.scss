@@ -1,0 +1,139 @@
+// IMPORTS
+@import url(//fonts.googleapis.com/css?family=Oswald);
+
+$color-darkblue: #1B2D49;
+$color-lightblue: #244561;
+$color-brightblue: #517ea5;
+$color-blue: #111111;
+$color-red: #ff0000;
+$color-green: #00ff15;
+$color-neon: #ccff00;
+$color-neon-dark: #a2c41b;
+$color-forest: #236b3b;
+$color-pink: #ff00bb;
+$color-white: #fff;
+$color-black: #000;
+$color-darkgrey: #5b5b5b;
+$color-lightgrey: #d6d6d6;
+$color-maroon: #63192f;
+
+// CONTAINER STYLES
+#root {
+  height: 100vh;
+  padding: 1rem;
+  font-family: Oswald, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-lightblue;
+  color: white;
+  //margin: auto;
+
+}
+
+// HERO-TITLE STYLES
+.hero-title {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+// DROPDOWN MENU + INPUT STYLES
+.dropdown-menus {
+  background: $color-darkblue;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  &-select {
+    background: $color-lightblue;
+    color: white;
+    outline: none;
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.converter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //flex-wrap: wrap;
+
+  margin: 1rem;
+
+
+  > * {
+    // margin: 0.5rem;
+  }
+
+  &-item {
+    //background: $color-darkblue;
+
+  }
+}
+
+.prompt {
+  //padding: 0.2rem 1rem;
+  //background: $color-brightblue;
+  //text-align: center;
+  //border: 5px solid $color-darkblue;
+  margin:0;
+  font-size: 1.2rem;
+}
+
+.converter-arrow {
+  color: $color-neon;
+  align-self: center;
+  padding: 0;
+  font-size: 2.5rem;
+  border: none;
+  transform: rotate(90deg);
+}
+
+input[type=number] {
+  color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputs {
+  outline: none;
+  border: none;
+  border: 4px solid $color-lightblue;
+  padding: 0.5rem;
+  background-color: $color-darkblue;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    border: 4px solid $color-brightblue;
+  }
+
+}
+
+// ADDITIONAL INFO STYLES
+
+.additional-info {
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+
+  > * {
+    margin: 0;
+  }
+}
+
+.error {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: red;
+  margin-bottom: 0.5rem;
+}
